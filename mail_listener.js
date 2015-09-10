@@ -12,7 +12,7 @@ var MAILBOX_CONFIGS = JSON.parse(fs.readFileSync(path.join(__dirname,
 
 var notify = function(title, message) {
 	var cmd = "notify-send -t 3000 \"" + title + "\" \"" + message
-			+ "\" -i evolution";
+			+ "\" -i thunderbird";
 	exec(cmd, function(error, stdout, stderr) {
 		console.log(stdout);
 		console.log(stderr);
