@@ -49,6 +49,10 @@ Test if it works:
 terminal-notifier -title 'Title' -message 'Lorem ipsum dolor sit amet' -open 'https://github.com/koujalgi-amith/ubuntu-mail-notifier'
 ```
 
+You should see something similar to this:
+
+![alt tag]http://cdn.osxdaily.com/wp-content/uploads/2014/01/notifications-banner-os-x.jpg)
+
 After running notification tests, it's now time to setup nodejs.
 
 #### Install nodejs
