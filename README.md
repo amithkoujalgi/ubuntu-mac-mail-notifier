@@ -25,7 +25,9 @@ Else, if you have Thunderbird mail client installed:
 notify-send "Notification Title" "This is a sample message" -i thunderbird -t 3000
 ```
 
-This should show a pop up on the right top corner of your screen with the above message.
+This should show a pop up on the right top corner of your screen with the above message. Something like this:
+
+![Alt text](http://lh6.ggpht.com/_1QSDkzYY2vc/S-w3ptqX4YI/AAAAAAAABBI/bQaz5tiBAdo/Desk%201_008.png "Ubuntu Notification")
 
 ### For Mac:
 
@@ -50,8 +52,7 @@ terminal-notifier -title 'Title' -message 'Lorem ipsum dolor sit amet' -open 'ht
 ```
 
 You should see something similar to this:
-
-![alt tag]http://cdn.osxdaily.com/wp-content/uploads/2014/01/notifications-banner-os-x.jpg)
+![Alt text](http://cdn.osxdaily.com/wp-content/uploads/2014/01/notifications-banner-os-x.jpg "Mac Notification")
 
 After running notification tests, it's now time to setup nodejs.
 
