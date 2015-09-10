@@ -1,6 +1,7 @@
 # ubuntu-mac-mail-notifier
 Notify a user with an on-screen pop up when a new mail arrives. 
-This works on Ubuntu with 'notify-send' and on Mac with AppleScript's 'display notification'.
+
+This works on Ubuntu with 'notify-send' and on Mac with AppleScript's 'display notification' or 'terminal-notifier'.
 
 ### Requirements:
  - Ubuntu/Mac

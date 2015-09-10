@@ -16,9 +16,20 @@ var MAILBOX_CONFIGS = JSON.parse(fs.readFileSync(path.join(__dirname,
 		'./mailbox_config.json'), 'utf8'));
 
 var notify = function(title, message) {
-	var cmd = "osascript -e 'display notification \"" + message
+	// if on OSX Mavericks or later, osascript display notification is
+	// supported.
+	var cmd1 = "osascript -e 'display notification \"" + message
 			+ "\" with title \"" + title + "\"'";
-	exec(cmd, function(error, stdout, stderr) {
+	exec(cmd1, function(error, stdout, stderr) {
+		console.log(stdout);
+		console.log(stderr);
+	});
+
+	// if osascript display notification isn't supported, use terminal-notifier
+	// instead (install with Homebrew)
+	var cmd2 = "terminal-notifier -title '" + title + "' -message '" + message
+			+ "' -activate 'com.apple.Mail'";
+	exec(cmd2, function(error, stdout, stderr) {
 		console.log(stdout);
 		console.log(stderr);
 	});
@@ -48,8 +59,7 @@ for ( var account in imap_accounts) {
 				var mailRecvDate = new Date(Date.parse(mail.receivedDate));
 				if (mailRecvDate >= datetime) {
 					notify("From: " + mail.from[0].address, "On account: "
-							+ imap_accounts[account].user + "---"
-							+ mail.text);
+							+ imap_accounts[account].user + "---" + mail.text);
 				}
 			}).start();
 }
