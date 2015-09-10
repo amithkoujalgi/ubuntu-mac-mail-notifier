@@ -78,3 +78,7 @@ On Mac:
 node mail_listener_mac.js
 ```
 
+Now the app keeps listening for new email on the configured IMAP accounts.
+When a email arrives, you should now be getting a notification pop-up on the top right corner of your screen.
+
+Peace!
