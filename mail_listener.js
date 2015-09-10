@@ -35,6 +35,7 @@ for ( var cfg in MAILBOX_CONFIGS) {
 	imap_accounts.push(account);
 }
 
+// start the listeners for each account
 for ( var account in imap_accounts) {
 	notifier(imap_accounts[account]).on(
 			'mail',
