@@ -9,6 +9,16 @@ This works on Ubuntu with 'notify-send' and on Mac with AppleScript's 'display n
 
 ### For Ubuntu:
 #### Install notify-send package on Ubuntu
+
+Install **libnotify-bin**:
+
+```sh
+sudo apt-get install libnotify-bin
+```
+
+or **notify-osd**:
+
+
 ```sh
 sudo apt-get install -y notify-osd
 ```
