@@ -1,0 +1,13 @@
+[{
+	"username" : "username1@yahoo.com",
+	"password" : "[password]",
+	"host" : "imap.host",
+	"port" : 993,
+	"tls" : true
+},{
+	"username" : "username2@gmail.com",
+	"password" : "[password]",
+	"host" : "imap.gmail.com",
+	"port" : 993,
+	"tls" : true
+}]
