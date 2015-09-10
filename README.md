@@ -64,6 +64,16 @@ npm install mailparser
 ```
 
 ### Run the app
+
+On Ubuntu:
+
 ```sh
-node mail_listener.js
+node mail_listener_ubuntu.js
 ```
+
+On Mac:
+
+```sh
+node mail_listener_mac.js
+```
+
