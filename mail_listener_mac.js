@@ -48,7 +48,7 @@ for ( var account in imap_accounts) {
 				var mailRecvDate = new Date(Date.parse(mail.receivedDate));
 				if (mailRecvDate >= datetime) {
 					notify("From: " + mail.from[0].address, "On account: "
-							+ imap_accounts[account].username + "---"
+							+ imap_accounts[account].user + "---"
 							+ mail.text);
 				}
 			}).start();
