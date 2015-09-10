@@ -4,8 +4,8 @@ Notify a user with 'notify-send' on-screnn pop up when a new mail arrives. This 
 
 ### Requirements:
  - Ubuntu
- - nodejs and npm
  - notify-send package
+ - nodejs and npm
 
 ### Install notify-send package on Ubuntu
 ```sh
