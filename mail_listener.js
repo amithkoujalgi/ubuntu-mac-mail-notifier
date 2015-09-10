@@ -1,8 +1,13 @@
-var notifier = require('mail-notifier');
-var sys = require('util')
-var exec = require('child_process').exec;
 var fs = require('fs');
 var path = require("path");
+
+var node_modules = path.join(__dirname, '/node_modules/');
+
+var notifier = require(node_modules + 'mail-notifier');
+
+var sys = require('util')
+var exec = require('child_process').exec;
+
 var datetime = new Date();
 console.log(datetime);
 var imap_accounts = [];
