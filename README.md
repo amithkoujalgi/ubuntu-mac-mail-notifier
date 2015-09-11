@@ -3,6 +3,9 @@ Notify a user with an on-screen pop up when a new mail arrives.
 
 This works on Ubuntu with 'notify-send' and on Mac with AppleScript's 'display notification' or 'terminal-notifier'.
 
+## NOTE:
+This works with IMAP enabled email accounts only.
+
 ### Requirements:
  - Ubuntu/Mac
  - nodejs and npm
